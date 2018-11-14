@@ -1,4 +1,5 @@
 # ratpack-methodoverride-example
+[![Build Status](https://travis-ci.org/gregwhitaker/ratpack-methodoverride-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/ratpack-methodoverride-example)
 
 An example of adding support for the `X-HTTP-METHOD-OVERRIDE` header in [Ratpack](https://ratpack.io).
 
