@@ -3,6 +3,8 @@
 
 An example of adding support for the `X-HTTP-METHOD-OVERRIDE` header in [Ratpack](https://ratpack.io).
 
+The example contains a single endpoint at `PATCH /api/v1/dummy` that can be also be called using the `X-HTTP-METHOD-OVERRIDE` header on a `POST` request.
+
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/ratpack-methodoverride-example/issues).
 
