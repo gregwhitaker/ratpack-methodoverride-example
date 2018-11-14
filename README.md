@@ -5,6 +5,27 @@ An example of adding support for the `X-HTTP-METHOD-OVERRIDE` header in [Ratpack
 
 The example contains a single endpoint at `PATCH /api/v1/dummy` that can be also be called using the `X-HTTP-METHOD-OVERRIDE` header on a `POST` request.
 
+## Running the Example
+1. Run the following command to start the application:
+
+        ./gradlew run
+        
+2. Run the following command to call the `/api/v1/dummy` endpoint using the `PATCH` method:
+
+        curl --request PATCH http://localhost:5050/api/v1/dummy
+        
+    If successful, you will see the following message:
+    
+        Dummy Endpoint!
+
+3. Run the following command to call the `/api/v1/dummy` endpoint using the override `POST` method:
+
+        curl -H "X-HTTP-METHOD-OVERRIDE: patch" -X POST http://localhost:5050/api/v1/dummy
+        
+    If successful, you will see the same message as before:
+    
+        Dummy Endpoint!
+
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/ratpack-methodoverride-example/issues).
 
